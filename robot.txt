@@ -1,0 +1,3 @@
+User-agent: *
+Allow: 
+Sitemap: https://ensar-i.github.io/SMM-Hesaplama/sitemap.xml
