@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="LU-1lhM4pSTDLKlZqp0ZvLoZuRCq7JuAEBbdwfKG7E8" />
     <title>Serbest Meslek Makbuzu Hesaplama</title>
-    <style>
+    
+	<meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Avukatlık Serbest Meslek Makbuzu Hesaplama">
+    <meta property="og:description" content="Avukatlar, şirketler ve kurumlara yönelik düzenlenecek serbest meslek makbuzu hesaplama robotudur. KDV, stopaj ve tevkifata göre farklı senaryolarda hesaplama yapar.">
+    <meta property="og:url" content="https://ensar-isik.github.io/smm-hesaplama/">
+	<meta property="og:site_name" content="Serbest Meslek Makbuzu Hesaplama">
+		
+	<style>
         :root {
             --bg-color: #f0f2f5;
             --card-color: #ffffff;
@@ -196,11 +204,10 @@
         <span class="renk-dot" style="background: #2e7d32;" onclick="setTheme('#2e7d32')"></span>
         <span class="renk-dot" style="background: #d81b60;" onclick="setTheme('#d81b60')"></span>
         <button onclick="toggleDark()" style="margin-left: 15px; padding: 6px 12px; cursor: pointer; border-radius: 6px; border: 1px solid #ccc; background: #fff;">Gece Modu</button>
-        <p style="font-size: 16px; color: #888; margin-top: 15px;">Bu hesaplama bilgilendirme amaçlıdır. Hesaplamaların güncelliği ve doğruluğu kontrol edilmelidir.</p>
+        <p style="font-size: 16px; color: #888; margin-top: 15px;">Uyarı: Bu hesaplama robotu bilgilendirme amaçlıdır. Sonuçların doğruluğunu garanti etmez.</p>
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
     function uiGuncelle() {
         const stopajVar = document.getElementById("stopajDurum").value === "var";
