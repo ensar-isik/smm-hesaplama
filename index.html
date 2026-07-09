@@ -13,7 +13,7 @@
     <meta property="og:url" content="https://ensar-isik.github.io/smm-hesaplama/">
 	<meta property="og:site_name" content="Serbest Meslek Makbuzu Hesaplama">
 
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖩</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>➕</text></svg>">
 		
 	<style>
         :root {
@@ -112,10 +112,44 @@
             body { background: #fff; padding: 0; }
             .sutun { box-shadow: none; border: 1px solid #eee; }
         }
+		.capraz-link {
+		    position: fixed;
+		    top: 20px;
+		    right: 20px;
+		    background-color: var(--accent-color, #2c3e50);
+		    color: #ffffff !important;
+		    padding: 10px 18px;
+		    text-decoration: none;
+		    border-radius: 8px;
+		    font-weight: bold;
+		    font-size: 14px;
+		    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+		    transition: all 0.3s ease;
+		    z-index: 1000;
+		}
+		
+		.capraz-link:hover {
+		    transform: translateY(-2px);
+		    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+		    opacity: 0.95;
+		}
+		
+		@media (max-width: 768px) {
+		    .capraz-link {
+		        position: static;
+		        display: block;
+		        text-align: center;
+		        margin: 10px auto 20px auto;
+		        width: 90%;
+		        max-width: 300px;
+		    }
+		}
     </style>
 </head>
 <body>
 
+<a href="https://ensar-i.github.io/Borc-Hesaplama/" class="capraz-link no-print">Borç Hesaplama Robotu ➔</a>
+	
 <div class="container" id="makbuzTablo">
     <header style="margin-bottom: 25px; border-bottom: 3px solid var(--accent-color); padding-bottom: 10px;">
         <h1 style="margin: 0; color: var(--accent-color);">SERBEST MESLEK MAKBUZU HESAPLAMA</h1>
